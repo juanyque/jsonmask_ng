@@ -6,6 +6,9 @@ from jsonmask import mask
 
 
 def test_apply_json_mask():
+
+    print('omg')
+
     ORIGINAL = 'original'
     EMPTY = 'empty'
 
