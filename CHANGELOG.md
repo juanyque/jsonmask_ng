@@ -1,5 +1,9 @@
 # Revision History
 
+## 0.3.0 (2023/08/14)
+
+- CATU-01 - Add suport to list. Merged [PR](https://github.com/zapier/jsonmask/pull/7/files) suggested by [Bernardoow](https://github.com/Bernardoow)
+
 ## 0.2.0 (2023/08/13)
 
 - Set up dev environment (fix current versions and add docker environment)
