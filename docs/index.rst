@@ -1,7 +1,7 @@
-jsonmask documentation
+jsonmask_ng documentation
 ======================
 
-``jsonmask`` is a simple library for applying `Google Partial Response`_/jsonmask filters to Python dictionaries.
+``jsonmask_ng`` is a simple library for applying `Google Partial Response`_/jsonmask_ng filters to Python dictionaries.
 
 .. toctree::
    :maxdepth: 2

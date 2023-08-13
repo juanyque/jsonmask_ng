@@ -19,7 +19,7 @@ else:
     notify = Notifier.notify
 
 
-watch_paths = ["jsonmask", "tests"]
+watch_paths = ["jsonmask_ng", "tests"]
 
 
 class Options(object):

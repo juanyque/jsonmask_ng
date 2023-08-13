@@ -2,4 +2,4 @@
 
 # pylint: disable=unused-import
 
-from jsonmask.tests.conftest import pytest_configure
+from jsonmask_ng.tests.conftest import pytest_configure

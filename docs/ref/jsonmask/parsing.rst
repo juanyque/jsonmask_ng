@@ -1,7 +1,7 @@
 Parsing Functions
 =================
 
-This document describes all the functions that are used to parse raw jsonmask values.
+This document describes all the functions that are used to parse raw jsonmask_ng values.
 
-.. automodule:: jsonmask.parsing
+.. automodule:: jsonmask_ng.parsing
   :members:

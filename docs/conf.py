@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# jsonmask documentation build configuration file, created by
+# jsonmask_ng documentation build configuration file, created by
 # sphinx-quickstart on Fri Dec 22 16:38:06 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -50,9 +50,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'jsonmask'
-copyright = '2018, Zapier'  # pylint: disable=redefined-builtin
-author = 'Zapier'
+project = 'jsonmask_ng'
+copyright = '2023, Juan Garcia Longaron / 2018, Craig Labenz'  # pylint: disable=redefined-builtin
+author = 'Juan Garcia Longaron'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -122,7 +122,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'jsonmaskdoc'
+htmlhelp_basename = 'jsonmask_ngdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -149,8 +149,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 # latex_documents = [
-#     (master_doc, 'jsonmask.tex', 'jsonmask Documentation',
-#      'Zapier', 'manual'),
+#     (master_doc, 'jsonmask_ng.tex', 'jsonmask_ng Documentation',
+#      'Juan Garcia Longaron', 'manual'),
 # ]
 
 
@@ -159,7 +159,7 @@ latex_elements = {
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 # man_pages = [
-#     (master_doc, 'jsonmask', 'jsonmask Documentation',
+#     (master_doc, 'jsonmask_ng', 'jsonmask_ng Documentation',
 #      [author], 1)
 # ]
 
@@ -170,7 +170,7 @@ latex_elements = {
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 # texinfo_documents = [
-#     (master_doc, 'jsonmask', 'jsonmask Documentation',
-#      author, 'jsonmask', 'One line description of project.',
+#     (master_doc, 'jsonmask_ng', 'jsonmask_ng Documentation',
+#      author, 'jsonmask_ng', 'One line description of project.',
 #      'Miscellaneous'),
 # ]

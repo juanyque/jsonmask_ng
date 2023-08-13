@@ -1,10 +1,10 @@
 Parsing
 =======
 
-Parsing is the act of compiling the raw jsonmask string into a Python dictionary that represents the nested structure of the map. Consider the following examples:
+Parsing is the act of compiling the raw jsonmask_ng string into a Python dictionary that represents the nested structure of the map. Consider the following examples:
 
 `No nested data:`
-    >>> from jsonmask import parse_fields
+    >>> from jsonmask_ng import parse_fields
     >>> parse_fields('a,b,c')
     {
         'a': {},
@@ -13,7 +13,7 @@ Parsing is the act of compiling the raw jsonmask string into a Python dictionary
     }
 
 `Simple nested data:`
-    >>> from jsonmask import parse_fields
+    >>> from jsonmask_ng import parse_fields
     >>> parse_fields('a,b/c')
     {
         'a': {},
@@ -24,7 +24,7 @@ Parsing is the act of compiling the raw jsonmask string into a Python dictionary
 
 
 `Nested data with multiple fields:`
-    >>> from jsonmask import parse_fields
+    >>> from jsonmask_ng import parse_fields
     >>> parse_fields('a,b/c,c(d,e,f)')
     {
         'a': {},

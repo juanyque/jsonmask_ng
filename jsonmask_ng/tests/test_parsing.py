@@ -4,7 +4,7 @@ import logging
 
 from expecter import expect
 
-from jsonmask import parsing
+from jsonmask_ng import parsing
 
 
 def test_multiple_builds():

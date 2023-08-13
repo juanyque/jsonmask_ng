@@ -1,25 +1,26 @@
 [tool.poetry]
 
-name = "jsonmask"
-version = "0.1.1"
+name = "jsonmask_ng"
+version = "0.2.0"
 description = "Implements the Google Partial Response protocol in Python"
 
 license = "MIT"
 
-authors = ["Craig Labenz <craig.labenz@gmail.com>"]
+authors = ["Juan Garcia Longaron <juan.mobilife@gmail.com>", "Craig Labenz <craig.labenz@gmail.com>"]
 
 readme = "README.md"
 
-documentation = "https://github.com/zapier/jsonmask/blob/master/README.md"
-repository = "https://github.com/zapier/jsonmask"
+documentation = "https://github.com/juanyque/jsonmask_ng/blob/master/README.md"
+repository = "https://github.com/juanyque/jsonmask_ng"
 
 keywords = [
+    "jsonmask_ng",
     "jsonmask",
     "json",
     "google partial response",
 ]
 classifiers = [
-    "Development Status :: 1 - Planning",
+    "Development Status :: 3 - Alpha",
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python",

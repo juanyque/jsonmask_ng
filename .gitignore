@@ -40,3 +40,6 @@ Icon*
 
 # Eclipse
 .settings
+
+# VSCode
+.vscode

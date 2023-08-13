@@ -1,5 +1,6 @@
 **The MIT License (MIT)**
 
+Copyright &copy; 2023, Juan Garcia Longaron
 Copyright &copy; 2018, Craig Labenz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

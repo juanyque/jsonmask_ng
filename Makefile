@@ -1,7 +1,7 @@
 # Project settings
-PROJECT := jsonmask
-PACKAGE := jsonmask
-REPOSITORY := zapier/jsonmask
+PROJECT := jsonmask_ng
+PACKAGE := jsonmask_ng
+REPOSITORY := juanyque/jsonmask_ng
 
 # Project paths
 PACKAGES := $(PACKAGE) tests

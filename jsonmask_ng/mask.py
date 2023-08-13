@@ -14,7 +14,7 @@ def apply_json_mask(data, json_mask, is_negated=False, depth=1, max_depth=None):
     """Take a data structure and compiled JSON mask, and remove unwanted data.
 
     :data:          The Python dictionary you want to prune
-    :json_mask:     The compiled jsonmask indicating which data to keep
+    :json_mask:     The compiled jsonmask_ng indicating which data to keep
                     and which to discard
     :is_negated:    If True, membership in the json_mask indicates removal
                     instead of inclusion
@@ -69,7 +69,7 @@ def is_structure_wildcard(structure):
 
 
 def should_include_variable(path, structure, is_negated=False):
-    """Determine inclusion of variable at path given parsed jsonmask.
+    """Determine inclusion of variable at path given parsed jsonmask_ng.
 
     :path:          Something like "teacher.classes.students"
     :structure:     Nested structure whose keys may correlate

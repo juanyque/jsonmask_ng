@@ -2,7 +2,7 @@
 # pylint: disable=redefined-outer-name,unused-variable,expression-not-assigned,singleton-comparison
 import logging
 
-from jsonmask import mask
+from jsonmask_ng import mask
 
 
 def test_apply_json_mask():
