@@ -44,7 +44,7 @@ DEPENDENCIES := $(VIRTUAL_ENV)/.poetry-$(shell bin/checksum pyproject.*)
 install: $(DEPENDENCIES)
 
 $(DEPENDENCIES):
-	@ poetry config settings.virtualenvs.in-project true
+	@ poetry config virtualenvs.in-project true
 	poetry install
 	@ touch $@
 

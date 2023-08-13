@@ -7,7 +7,7 @@ Implements [Google Partial Response](https://developers.google.com/discovery/v1/
 ## Requirements
 
 - Python 2.7
-- Python 3.6+
+- Python 3.7
 
 ## Installation
 
@@ -69,3 +69,22 @@ Output:
     },
 }
 ```
+
+## Contribute
+
+To setup an appropriate dev environment:
+
+- With docker environment available
+- run: `./docker_start.sh``
+
+- run tests `make test`
+
+- Clean (test, cache, ...) `make clean`
+
+- Clean (test, cache, ... including virtualenv) `make clean-all` (you will need a `make all` after this)
+
+### Util commands:
+
+- To fix poetry.lock with minimal changes: `poetry lock --no-update`
+- To fix poetry.lock updating package versions: `poetry lock` (this could don't work)
+- After `poetry lock...` probably you will need to do `make all` to update packages on virtualenv
