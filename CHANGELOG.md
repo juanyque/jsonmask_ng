@@ -1,5 +1,10 @@
 # Revision History
 
+## 0.3.1 (2023/08/18)
+
+- Update Python versions compatibility
+- Add testing scripts
+
 ## 0.3.0 (2023/08/14)
 
 - CATU-01 - Add suport to list. Merged [PR](https://github.com/zapier/jsonmask/pull/7/files) suggested by [Bernardoow](https://github.com/Bernardoow)

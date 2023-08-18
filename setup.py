@@ -11,13 +11,13 @@ from setuptools import find_packages, setup
 # setup_kwargs = {
 #     'packages': packages,
 #     'package_data': package_data,
-#     'python_requires': '>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*',
+#     'python_requires': '>=3.7, <3.10',
 # }
 
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.3.0'
+VERSION = '0.3.1'
 PACKAGE_NAME = 'jsonmask_ng'
 AUTHOR = 'Juan Garcia Longaron'
 AUTHOR_EMAIL = 'juan.mobilife@gmail.com'
@@ -29,8 +29,8 @@ LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding='utf-8')
 LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = [
-      'sys'
-      ]
+    'sys'
+]
 
 setup(
     name=PACKAGE_NAME,

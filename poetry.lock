@@ -23,10 +23,7 @@ files = [
 ]
 
 [package.dependencies]
-"backports.functools-lru-cache" = {version = "*", markers = "python_version < \"3.4\""}
-enum34 = {version = ">=1.1.3", markers = "python_version < \"3.4\""}
 lazy-object-proxy = "*"
-singledispatch = {version = "*", markers = "python_version < \"3.4\""}
 six = "*"
 wrapt = "*"
 
@@ -56,21 +53,6 @@ files = [
 dev = ["coverage", "hypothesis", "pre-commit", "pympler", "pytest", "six", "sphinx", "zope.interface", "zope.interface"]
 docs = ["sphinx", "zope.interface"]
 tests = ["coverage", "hypothesis", "pympler", "pytest", "six", "zope.interface"]
-
-[[package]]
-name = "backports.functools-lru-cache"
-version = "1.5"
-description = "backports.functools_lru_cache"
-optional = false
-python-versions = ">=2.6"
-files = [
-    {file = "backports.functools_lru_cache-1.5-py2.py3-none-any.whl", hash = "sha256:f0b0e4eba956de51238e17573b7087e852dfe9854afd2e9c873f73fc0ca0a6dd"},
-    {file = "backports.functools_lru_cache-1.5.tar.gz", hash = "sha256:9d98697f088eb1b0fa451391f91afb5e3ebde16bbdb272819fd091151fda4f1a"},
-]
-
-[package.extras]
-docs = ["jaraco.packaging (>=3.2)", "rst.linker (>=1.9)", "sphinx"]
-testing = ["collective.checkdocs", "pytest (>=2.8)"]
 
 [[package]]
 name = "backports.shutil-get-terminal-size"
@@ -125,16 +107,6 @@ python-versions = "*"
 files = [
     {file = "colorama-0.3.9-py2.py3-none-any.whl", hash = "sha256:463f8483208e921368c9f306094eb6f725c6ca42b0f97e313cb5d5512459feda"},
     {file = "colorama-0.3.9.tar.gz", hash = "sha256:48eb22f4f8461b1df5734a074b57042430fb06e1d61bd1e11b078c0fe6d7a1f1"},
-]
-
-[[package]]
-name = "configparser"
-version = "3.5.0"
-description = "This library brings the updated configparser from Python 3.5 to Python 2.6-3.5."
-optional = false
-python-versions = "*"
-files = [
-    {file = "configparser-3.5.0.tar.gz", hash = "sha256:5308b47021bc2340965c371f0f058cc6971a04502638d4244225c49d80db273a"},
 ]
 
 [[package]]
@@ -206,19 +178,6 @@ files = [
 ]
 
 [[package]]
-name = "enum34"
-version = "1.1.6"
-description = "Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4"
-optional = false
-python-versions = "*"
-files = [
-    {file = "enum34-1.1.6-py2-none-any.whl", hash = "sha256:6bd0f6ad48ec2aa117d3d141940d484deccda84d4fcd884f5c3d93c23ecd8c79"},
-    {file = "enum34-1.1.6-py3-none-any.whl", hash = "sha256:644837f692e5f550741432dd3f223bbb9852018674981b1664e5dc339387588a"},
-    {file = "enum34-1.1.6.tar.gz", hash = "sha256:8ad8c4783bf61ded74527bffb48ed9b54166685e4230386a9ed9b1279e2df5b1"},
-    {file = "enum34-1.1.6.zip", hash = "sha256:2d81cbbe0e73112bdfe6ef8576f2238f2ba27dd0d55752a776c41d38b7da2850"},
-]
-
-[[package]]
 name = "freezegun"
 version = "0.3.11"
 description = "Let your Python tests travel through time"
@@ -234,17 +193,6 @@ python-dateutil = ">=1.0,<2.0 || >2.0"
 six = "*"
 
 [[package]]
-name = "funcsigs"
-version = "1.0.2"
-description = "Python function signatures from PEP362 for Python 2.6, 2.7 and 3.2+"
-optional = false
-python-versions = "*"
-files = [
-    {file = "funcsigs-1.0.2-py2.py3-none-any.whl", hash = "sha256:330cc27ccbf7f1e992e69fef78261dc7c6569012cf397db8d3de0234e6c937ca"},
-    {file = "funcsigs-1.0.2.tar.gz", hash = "sha256:a7bb0f2cf3a3fd1ab2732cb49eba4252c2af4240442415b4abce3b87022a8f50"},
-]
-
-[[package]]
 name = "future"
 version = "0.17.1"
 description = "Clean single-source support for Python 3 and 2"
@@ -252,17 +200,6 @@ optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 files = [
     {file = "future-0.17.1.tar.gz", hash = "sha256:67045236dcfd6816dc439556d009594abf643e5eb48992e36beac09c2ca659b8"},
-]
-
-[[package]]
-name = "futures"
-version = "3.2.0"
-description = "Backport of the concurrent.futures package from Python 3"
-optional = false
-python-versions = ">=2.6, <3"
-files = [
-    {file = "futures-3.2.0-py2-none-any.whl", hash = "sha256:ec0a6cb848cc212002b9828c3e34c675e0c9ff6741dc445cab6fdd4e1085d1f1"},
-    {file = "futures-3.2.0.tar.gz", hash = "sha256:9ec02aa7d674acb8618afb127e27fde7fc68994c0437ad759fa094a574adb265"},
 ]
 
 [[package]]
@@ -287,9 +224,6 @@ files = [
     {file = "isort-4.3.4-py3-none-any.whl", hash = "sha256:1153601da39a25b14ddc54955dbbacbb6b2d19135386699e2ad58517953b34af"},
     {file = "isort-4.3.4.tar.gz", hash = "sha256:b9c40e9750f3d77e6e4d441d8b0266cf555e7cdabdcff33c4fd06366ca761ef8"},
 ]
-
-[package.dependencies]
-futures = {version = "*", markers = "python_version == \"2.7\""}
 
 [[package]]
 name = "jinja2"
@@ -359,10 +293,7 @@ files = [
 
 [package.dependencies]
 six = "*"
-tornado = [
-    {version = "<6", markers = "python_version == \"2.7\""},
-    {version = "*", markers = "python_version > \"2.7\""},
-]
+tornado = {version = "*", markers = "python_version > \"2.7\""}
 
 [[package]]
 name = "macfsevents"
@@ -535,21 +466,6 @@ files = [
 ]
 
 [[package]]
-name = "pathlib2"
-version = "2.3.2"
-description = "Object-oriented filesystem paths"
-optional = false
-python-versions = "*"
-files = [
-    {file = "pathlib2-2.3.2-py2.py3-none-any.whl", hash = "sha256:d1aa2a11ba7b8f7b21ab852b1fb5afb277e1bb99d5dfc663380b5015c0d80c5a"},
-    {file = "pathlib2-2.3.2.tar.gz", hash = "sha256:8eb170f8d0d61825e09a95b38be068299ddeda82f35e96c3301a8a5e7604cb83"},
-]
-
-[package.dependencies]
-scandir = {version = "*", markers = "python_version < \"3.5\""}
-six = "*"
-
-[[package]]
 name = "pefile"
 version = "2018.8.8"
 description = "Python PE parsing module"
@@ -611,7 +527,6 @@ files = [
 ]
 
 [package.dependencies]
-configparser = {version = "*", markers = "python_version == \"2.7\""}
 six = "*"
 snowballstemmer = "*"
 
@@ -655,12 +570,9 @@ files = [
 
 [package.dependencies]
 astroid = ">=1.6,<2.0"
-"backports.functools-lru-cache" = {version = "*", markers = "python_version == \"2.7\""}
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
-configparser = {version = "*", markers = "python_version == \"2.7\""}
 isort = ">=4.2.5"
 mccabe = "*"
-singledispatch = {version = "*", markers = "python_version < \"3.4\""}
 six = "*"
 
 [[package]]
@@ -691,9 +603,7 @@ files = [
 atomicwrites = ">=1.0"
 attrs = ">=17.4.0"
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
-funcsigs = {version = "*", markers = "python_version < \"3.0\""}
 more-itertools = ">=4.0.0"
-pathlib2 = {version = ">=2.2.0", markers = "python_version < \"3.6\""}
 pluggy = ">=0.7"
 py = ">=1.5.0"
 setuptools = "*"
@@ -823,26 +733,6 @@ security = ["cryptography (>=1.3.4)", "idna (>=2.0.0)", "pyOpenSSL (>=0.14)"]
 socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
 [[package]]
-name = "scandir"
-version = "1.9.0"
-description = "scandir, a better directory iterator and faster os.walk()"
-optional = false
-python-versions = "*"
-files = [
-    {file = "scandir-1.9.0-cp27-cp27m-win32.whl", hash = "sha256:f5c71e29b4e2af7ccdc03a020c626ede51da471173b4a6ad1e904f2b2e04b4bd"},
-    {file = "scandir-1.9.0-cp27-cp27m-win_amd64.whl", hash = "sha256:1b5c314e39f596875e5a95dd81af03730b338c277c54a454226978d5ba95dbb6"},
-    {file = "scandir-1.9.0-cp34-cp34m-win32.whl", hash = "sha256:346619f72eb0ddc4cf355ceffd225fa52506c92a2ff05318cfabd02a144e7c4e"},
-    {file = "scandir-1.9.0-cp34-cp34m-win_amd64.whl", hash = "sha256:1444134990356c81d12f30e4b311379acfbbcd03e0bab591de2696a3b126d58e"},
-    {file = "scandir-1.9.0-cp35-cp35m-win32.whl", hash = "sha256:61859fd7e40b8c71e609c202db5b0c1dbec0d5c7f1449dec2245575bdc866792"},
-    {file = "scandir-1.9.0-cp35-cp35m-win_amd64.whl", hash = "sha256:c7708f29d843fc2764310732e41f0ce27feadde453261859ec0fca7865dfc41b"},
-    {file = "scandir-1.9.0-cp36-cp36m-win32.whl", hash = "sha256:c9009c527929f6e25604aec39b0a43c3f831d2947d89d6caaab22f057b7055c8"},
-    {file = "scandir-1.9.0-cp36-cp36m-win_amd64.whl", hash = "sha256:c14701409f311e7a9b7ec8e337f0815baf7ac95776cc78b419a1e6d49889a383"},
-    {file = "scandir-1.9.0-cp37-cp37m-win32.whl", hash = "sha256:04b8adb105f2ed313a7c2ef0f1cf7aff4871aa7a1883fa4d8c44b5551ab052d6"},
-    {file = "scandir-1.9.0-cp37-cp37m-win_amd64.whl", hash = "sha256:a5e232a0bf188362fa00123cc0bb842d363a292de7126126df5527b6a369586a"},
-    {file = "scandir-1.9.0.tar.gz", hash = "sha256:44975e209c4827fc18a3486f257154d34ec6eaec0f90fef0cca1caa482db7064"},
-]
-
-[[package]]
 name = "setuptools"
 version = "44.1.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
@@ -856,20 +746,6 @@ files = [
 [package.extras]
 certs = ["certifi (==2016.9.26)"]
 ssl = ["wincertstore (==0.2)"]
-
-[[package]]
-name = "singledispatch"
-version = "3.4.0.3"
-description = "This library brings functools.singledispatch from Python 3.4 to Python 2.6-3.3."
-optional = false
-python-versions = "*"
-files = [
-    {file = "singledispatch-3.4.0.3-py2.py3-none-any.whl", hash = "sha256:833b46966687b3de7f438c761ac475213e53b306740f1abfaa86e1d1aae56aa8"},
-    {file = "singledispatch-3.4.0.3.tar.gz", hash = "sha256:5b06af87df13818d14f08a028e42f566640aef80805c3b50c5056b086e3c2b9c"},
-]
-
-[package.dependencies]
-six = "*"
 
 [[package]]
 name = "six"
@@ -956,5 +832,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "~2.7 || ~3.7"
-content-hash = "cf3bb93229d372cec35f88c4c01b91dd840d271edf87e5c7e6452131f797ef35"
+python-versions = ">=3.7,<3.10"
+content-hash = "4ce243eb9fcde74a4c05bcf05f18711c451b624f3cd758af99cac4132fd207c0"

@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  app_3.7:
+    build:
+      context: .
+      args:
+        PYTHON_VERSION: 3.7
+    command: make test-all
+  app_3.8:
+    build:
+      context: .
+      args:
+        PYTHON_VERSION: 3.8
+    command: make test-all
+  app_3.9:
+    build:
+      context: .
+      args:
+        PYTHON_VERSION: 3.9
+    command: make test-all

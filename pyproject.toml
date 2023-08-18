@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "jsonmask_ng"
-version = "0.3.0"
+version = "0.3.1"
 description = "Implements the Google Partial Response protocol in Python"
 
 license = "MIT"
@@ -24,15 +24,15 @@ classifiers = [
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 2",
-    "Programming Language :: Python :: 2.7",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
 ]
 
 [tool.poetry.dependencies]
 
-python = "~2.7 || ~3.7"
+python = ">=3.7,<3.10"
 
 [tool.poetry.dev-dependencies]
 
