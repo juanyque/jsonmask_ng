@@ -28,45 +28,47 @@ classifiers = [
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 
 [tool.poetry.dependencies]
 
-python = ">=3.7,<3.10"
+python = ">=3.7,<3.11"
 
 [tool.poetry.dev-dependencies]
 
 
 # Linters
-isort = "*"
-pylint = "*"
-pycodestyle = "*"
-pydocstyle = "*"
-snowballstemmer = "*" # missing dependency for pydocstyle
+isort = "~4.3"
+pylint = "~1.9"
+pycodestyle = "~2.4"
+pydocstyle = "~3.0"
+snowballstemmer = "~1.2" # missing dependency for pydocstyle
 
 # Testing
-pytest = "^3.3"
+pytest = "<4.0"
 pytest-describe = "*"
 pytest-expecter = "*"
 pytest-random = "*"
 pytest-cov = "*"
-freezegun = "*"
+freezegun = "~0.3"
 minilog = "~0.4"
 
 # Reports
-coveragespace = "*"
+coveragespace = "~2.1"
 
 # Documentation
-mkdocs = "<1.0"
-pygments = "*"
+mkdocs = "~0.17"
+pygments = "~2.5"
 
 # Build
-pyinstaller = "*"
+pyinstaller = "~5.13"
 
 # Tooling
-sniffer = "*"
-MacFSEvents = { version = "*", platform = "darwin" }
-pync = { version = "*", platform = "darwin" }
+sniffer = "~0.4"
+MacFSEvents = { version = "~0.8", platform = "darwin" }
+pync = { version = "~2.0", platform = "darwin" }
 
 # Fixing issues
+#pyyaml = "~5.3"
 pyyaml = "!=5.4.0,!=5.4.1"
