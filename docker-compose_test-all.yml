@@ -5,17 +5,23 @@ services:
     build:
       context: .
       args:
-        PYTHON_VERSION: 3.7
+        PYTHON_VERSION: "3.7"
     command: make test-all
   app_3.8:
     build:
       context: .
       args:
-        PYTHON_VERSION: 3.8
+        PYTHON_VERSION: "3.8"
     command: make test-all
   app_3.9:
     build:
       context: .
       args:
-        PYTHON_VERSION: 3.9
+        PYTHON_VERSION: "3.9"
+    command: make test-all
+  app_3.10:
+    build:
+      context: .
+      args:
+        PYTHON_VERSION: "3.10"
     command: make test-all

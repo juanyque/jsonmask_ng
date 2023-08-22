@@ -46,13 +46,13 @@ pydocstyle = "~3.0"
 snowballstemmer = "~1.2" # missing dependency for pydocstyle
 
 # Testing
-pytest = "<4.0"
-pytest-describe = "*"
-pytest-expecter = "*"
-pytest-random = "*"
-pytest-cov = "*"
-freezegun = "~0.3"
-minilog = "~0.4"
+pytest = "~7.4"
+pytest-describe = "~2.1"
+pytest-expecter = "~2.3"
+pytest-random = "~0.02"
+pytest-cov = "~2.10"
+freezegun = "~1.2"
+minilog = "~2.1"
 
 # Reports
 coveragespace = "~2.1"

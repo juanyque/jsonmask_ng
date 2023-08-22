@@ -1,0 +1,21 @@
+echo ""
+echo "Updating libraries:"
+echo "-------------------"
+echo ""
+poetry lock
+echo ""
+echo ""
+echo ""
+echo "Delete and recreate .venv:"
+echo "--------------------------"
+echo ""
+rm -r .venv && make all
+echo ""
+echo ""
+echo ""
+echo "Launch tests:"
+echo "-------------"
+echo ""
+make test-all
+echo ""
+echo ""
