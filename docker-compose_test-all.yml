@@ -25,3 +25,9 @@ services:
       args:
         PYTHON_VERSION: "3.10"
     command: make test-all
+  app_3.11:
+    build:
+      context: .
+      args:
+        PYTHON_VERSION: "3.11"
+    command: make test-all

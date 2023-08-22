@@ -29,11 +29,12 @@ classifiers = [
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
 ]
 
 [tool.poetry.dependencies]
 
-python = ">=3.7,<3.11"
+python = ">=3.7,<3.12"
 
 [tool.poetry.dev-dependencies]
 
