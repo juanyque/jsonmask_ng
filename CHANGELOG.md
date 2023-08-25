@@ -1,9 +1,10 @@
 # Revision History
 
-## 0.3.1 (2023/08/18)
+## 0.4.0 (2023/08/25)
 
-- Update Python versions compatibility
-- Add testing scripts
+- Update package versions
+- Compatibility with 3.7, 3.8, 3.9, 3.10 and 3.11
+- Add docker testing and dev scripts
 
 ## 0.3.0 (2023/08/14)
 

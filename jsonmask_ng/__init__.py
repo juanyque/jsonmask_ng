@@ -3,6 +3,6 @@ from .parsing import parse_fields
 
 
 __project__ = 'jsonmask_ng'
-__version__ = '0.3.1'
+__version__ = '0.4.0'
 
 VERSION = "{0} v{1}".format(__project__, __version__)

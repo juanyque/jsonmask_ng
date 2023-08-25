@@ -1,7 +1,7 @@
 [tool.poetry]
 
 name = "jsonmask_ng"
-version = "0.3.1"
+version = "0.4.0"
 description = "Implements the Google Partial Response protocol in Python"
 
 license = "MIT"
@@ -56,7 +56,7 @@ freezegun = "~1.2"
 minilog = "~2.1"
 
 # Reports
-coveragespace = "~2.1"
+coveragespace = "~3.1"
 
 # Documentation
 mkdocs = "~0.17"

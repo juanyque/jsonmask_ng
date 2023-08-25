@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: jsonmask_ng
-Version: 0.3.1
+Version: 0.4.0
 Summary: Implements the Google Partial Response protocol in Python
 Home-page: https://github.com/juanyque/jsonmask_ng
 Author: Juan Garcia Longaron
 Author-email: juan.mobilife@gmail.com
 Keywords: jsonmask_ng,jsonmask,json,google partial response
-Requires-Python: >=3.7, <3.10,
+Requires-Python: >=3.7, <3.12,
 Classifier: Development Status :: 3 - Alpha
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Natural Language :: English
@@ -16,5 +16,7 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
 Project-URL: Documentation, https://github.com/juanyque/jsonmask_ng/blob/master/README.md
 Project-URL: Repository, https://github.com/juanyque/jsonmask_ng

@@ -1,8 +1,22 @@
-docker-compose -f docker-compose_test-all.yml build
+PYTHON_VERSIONS='3.7 3.8 3.9 3.10 3.11'
 
-# docker-compose -f docker-compose_test-all.yml up
-docker-compose -f docker-compose_test-all.yml run --rm app_3.7 make test-all
-docker-compose -f docker-compose_test-all.yml run --rm app_3.8 make test-all
-docker-compose -f docker-compose_test-all.yml run --rm app_3.9 make test-all
-docker-compose -f docker-compose_test-all.yml run --rm app_3.10 make test-all
-docker-compose -f docker-compose_test-all.yml run --rm app_3.11 make test-all
+for PYTHON_VERSION in $PYTHON_VERSIONS
+do
+  echo "******* Building Python $PYTHON_VERSION *******"
+  PYTHON_VERSION=$PYTHON_VERSION docker-compose -f docker-compose_test.yml -p jsonmask-ng-test-${PYTHON_VERSION/./-} build &
+  echo ""
+done
+
+wait $(jobs -rp)
+
+for PYTHON_VERSION in $PYTHON_VERSIONS
+do
+  echo ""
+  echo ""
+  echo "******* Testing on Python $PYTHON_VERSION *******"
+  echo ""
+  PYTHON_VERSION=$PYTHON_VERSION docker-compose -f docker-compose_test.yml -p jsonmask-ng-test-${PYTHON_VERSION/./-} run --rm app
+  echo ""
+  docker rmi $(docker images "jsonmask-ng-test-${PYTHON_VERSION/./-}-app" -a -q)
+  echo ""
+done

@@ -4,12 +4,12 @@
 
 ### Requirements
 
-* Make:
-    * Windows: http://mingw.org/download/installer
-    * Mac: http://developer.apple.com/xcode
-    * Linux: http://www.gnu.org/software/make
-* Poetry: https://poetry.eustace.io
-* Graphviz: http://www.graphviz.org/Download.php
+- Make:
+  - Windows: http://mingw.org/download/installer
+  - Mac: http://developer.apple.com/xcode
+  - Linux: http://www.gnu.org/software/make
+- Poetry: https://poetry.eustace.io
+- Graphviz: http://www.graphviz.org/Download.php
 
 To confirm these system dependencies are configured correctly:
 
@@ -76,4 +76,12 @@ Release to PyPI:
 
 ```sh
 $ make upload
+```
+
+## Coverage
+
+Reset expected coverage to current value:
+
+```sh
+$ poetry run coveragespace juanyque/jsonmask_ng --reset
 ```

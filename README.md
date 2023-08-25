@@ -8,8 +8,11 @@ jsonmask_ng is a fork of [jsonmask](https://github.com/zapier/jsonmask) from Zap
 
 ## Requirements
 
-- Python 2.7
 - Python 3.7
+- Python 3.8
+- Python 3.9
+- Python 3.10
+- Python 3.11
 
 ## Installation
 
@@ -87,7 +90,7 @@ To setup an appropriate dev environment:
 
 - Build dist package: `make build`
 
-- Set PyPI credentials: `poetry config pypi-token.pypi pypi-xxxxxTOKENXxxx``
+- Set PyPI credentials: `poetry config pypi-token.pypi pypi-xxxxxTOKENXxxx` (find token in `~/.pypirc` file or create a new one on https://pypi.org/manage/account/token/)
 
 - Build dist package: `make upload`
 
