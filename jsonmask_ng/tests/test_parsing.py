@@ -70,7 +70,7 @@ def test_multiple_builds():
     for test in tests:
         error_msg = 'Failed to compile fields {}'.format(test['fields'])
         try:
-            expect(test['mask']) == parsing.parse_fields(test['fields'])
+            expect(parsing.parse_fields(test['fields'])) == test['mask']
         except Exception as e:
             logging.exception(e)
             raise e
