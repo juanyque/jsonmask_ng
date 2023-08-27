@@ -14,6 +14,18 @@ def test_multiple_builds():
             'mask': {'a': {}, 'b': {}},
         },
         {
+            'fields': ' a,b',
+            'mask': {'a': {}, 'b': {}},
+        },
+        {
+            'fields': 'a ,b',
+            'mask': {'a': {}, 'b': {}},
+        },
+        {
+            'fields': ' a , b ',
+            'mask': {'a': {}, 'b': {}},
+        },
+        {
             'fields': 'a/b',
             'mask': {'a': {'b': {}}},
         },
@@ -42,6 +54,10 @@ def test_multiple_builds():
             'mask': {'a': {'b': {}, 'c': {}}},
         },
         {
+            'fields': ' a ( b , c )',
+            'mask': {'a': {'b': {}, 'c': {}}},
+        },
+        {
             'fields': 'a(b,c/d)',
             'mask': {'a': {'b': {}, 'c': {'d': {}}}},
         },
@@ -63,6 +79,26 @@ def test_multiple_builds():
         },
         {
             'fields': 'a(b,c/d(x,y,z)),abc(xyz/z(a))',
+            'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}}}, 'abc': {'xyz': {'z': {'a': {}}}}},
+        },
+        {
+            'fields': '''
+              a(
+                b,
+                c/
+                  d(
+                    x,
+                    y,
+                    z
+                  )
+              ),
+              abc(
+                xyz/
+                  z(
+                    a
+                  )
+              )
+            ''',
             'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}}}, 'abc': {'xyz': {'z': {'a': {}}}}},
         },
     ]

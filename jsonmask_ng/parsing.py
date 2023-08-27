@@ -5,6 +5,7 @@ TERMINALS = ['(', ')', ',', '/']
 
 
 def maybe_add_word(name, tokens):
+    name = name.strip()
     if name:
         tokens.append(name)
         name = ''
