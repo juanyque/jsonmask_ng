@@ -76,18 +76,42 @@ def _parse_partial_response(tokens, parent, stack):
     return parent
 
 
-def parse_fields(text):
+def parse_fields(fields):
     """Turn a string jsonmask_ng into a Python dictionary representing the desired data pruning.
 
     You will likely want to call ``jsonmask_ng.mask.apply_json_mask``.
 
-    :text:      Plain text value representing desired structure, e.g., `a,b/c`
+    :fields:    Plain text value or list representing desired structure, e.g., `a,b/c` / ['a', {'b': ['c']}]
 
     :returns:   dict
     """
-    if not text:
+    if not fields:
         return None
 
+    if isinstance(fields, list):
+        fields = parse_fields_list(fields)
+
     return parse_partial_response(
-        tokens=tokenize_partial_response(text),
+        tokens=tokenize_partial_response(fields),
     )
+
+
+def parse_fields_list(fields_list):
+    fields_string = ''
+
+    for field in fields_list:
+        if isinstance(field, str):
+            if fields_string:
+                fields_string += ','
+            fields_string += field
+
+        if isinstance(field, dict):
+            for key in field:
+                if fields_string:
+                    fields_string += ','
+                fields_string += key
+                fields_string += '('
+                fields_string += parse_fields_list(field[key])
+                fields_string += ')'
+
+    return fields_string

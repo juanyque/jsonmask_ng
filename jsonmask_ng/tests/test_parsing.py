@@ -1,8 +1,10 @@
 """Sample unit test module using pytest-describe and expecter."""
 # pylint: disable=redefined-outer-name,unused-variable,expression-not-assigned,singleton-comparison
 import logging
+import yaml
 
 from expecter import expect
+from yaml.loader import SafeLoader
 
 from jsonmask_ng import parsing
 
@@ -78,6 +80,10 @@ def test_multiple_builds():
             'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}, 'abc': {'xyz': {'z': {'a': {}}}}}}},
         },
         {
+            'fields': yaml.load(yaml_input_1(), Loader=SafeLoader)['fields'],
+            'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}, 'abc': {'xyz': {'z': {'a': {}}}}}}},
+        },
+        {
             'fields': 'a(b,c/d(x,y,z)),abc(xyz/z(a))',
             'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}}}, 'abc': {'xyz': {'z': {'a': {}}}}},
         },
@@ -101,6 +107,10 @@ def test_multiple_builds():
             ''',
             'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}}}, 'abc': {'xyz': {'z': {'a': {}}}}},
         },
+        {
+            'fields': yaml.load(yaml_input_2(), Loader=SafeLoader)['fields'],
+            'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}}}, 'abc': {'xyz': {'z': {'a': {}}}}},
+        },
     ]
 
     for test in tests:
@@ -110,3 +120,37 @@ def test_multiple_builds():
         except Exception as e:
             logging.exception(e)
             raise e
+
+
+def yaml_input_1():
+    return '''
+fields:
+  - a:
+    - b
+    - c:
+      - d:
+        - x
+        - y
+        - z
+      - abc:
+        - xyz:
+          - z:
+            - a
+'''
+
+
+def yaml_input_2():
+    return '''
+fields:
+  - a:
+    - b
+    - c:
+      - d:
+        - x
+        - y
+        - z
+  - abc:
+    - xyz:
+      - z:
+        - a
+'''

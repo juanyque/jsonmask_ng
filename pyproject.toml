@@ -69,7 +69,3 @@ pyinstaller = "~5.13"
 sniffer = "~0.4"
 MacFSEvents = { version = "~0.8", platform = "darwin" }
 pync = { version = "~2.0", platform = "darwin" }
-
-# Fixing issues
-#pyyaml = "~5.3"
-pyyaml = "!=5.4.0,!=5.4.1"
