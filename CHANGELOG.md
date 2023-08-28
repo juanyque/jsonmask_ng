@@ -1,5 +1,9 @@
 # Revision History
 
+## 0.4.2 (2023/08/28)
+
+- Allow structured input like which could come from a yaml
+
 ## 0.4.1 (2023/08/27)
 
 - Trims blank characters (strip) from tokens to allow more readable inputs
