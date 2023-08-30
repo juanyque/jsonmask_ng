@@ -111,6 +111,10 @@ def test_multiple_builds():
             'fields': yaml.load(yaml_input_2(), Loader=SafeLoader)['fields'],
             'mask': {'a': {'b': {}, 'c': {'d': {'x': {}, 'y': {}, 'z': {}}}}, 'abc': {'xyz': {'z': {'a': {}}}}},
         },
+        {
+            'fields': coplex_list(),
+            'mask': {'a': {}, 'attrs': {'a': {}, 't': {}, 't': {}, 'r': {}, 's': {}}, 'z': {}},
+        },
     ]
 
     for test in tests:
@@ -154,3 +158,13 @@ fields:
       - z:
         - a
 '''
+
+
+def coplex_list():
+    class Object(object):
+        pass
+
+    obj = Object()
+    obj.attrs = ['a', 't', 't', 'r', 's']
+
+    return ['a', obj, 'z']

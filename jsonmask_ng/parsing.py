@@ -104,6 +104,8 @@ def parse_fields_list(fields_list):
             if fields_string:
                 fields_string += ','
             fields_string += field
+        elif hasattr(field, "__dict__"):
+            field = field.__dict__
 
         if isinstance(field, dict):
             for key in field:
