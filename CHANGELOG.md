@@ -1,5 +1,9 @@
 # Revision History
 
+## 0.4.3 (2023/08/31)
+
+- Allow input objects that responds to `__dict__`
+
 ## 0.4.2 (2023/08/28)
 
 - Allow structured input like which could come from a yaml
