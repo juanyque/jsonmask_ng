@@ -1,5 +1,9 @@
 # Revision History
 
+## 0.4.4 (2023/08/31)
+
+- Manage empty edge cases: return without filter.
+
 ## 0.4.3 (2023/08/31)
 
 - Allow input objects that responds to `__dict__`
