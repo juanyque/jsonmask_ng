@@ -14,9 +14,14 @@ def test_apply_json_mask():
 
     tests = [
         # (data, mask, result, result_when_mask_negated,)
+        ({'a': 1}, None, ORIGINAL, EMPTY,),
+        ({'a': 1}, '', ORIGINAL, EMPTY,),
+        ({'a': 1}, '()', ORIGINAL, EMPTY,),
+        ({'a': 1}, {}, ORIGINAL, EMPTY,),
         # 0
         ({'a': 1}, 'a', ORIGINAL, EMPTY,),
         ({'a': 1}, 'b', EMPTY, ORIGINAL,),
+        ({'a': 1}, '-', EMPTY, ORIGINAL,),
         # Drilling into terminal-values is a no-op
         ({'a': 1}, 'a/b', ORIGINAL, ORIGINAL,),
         ({'a': {'b': 1}}, 'a', ORIGINAL, EMPTY,),

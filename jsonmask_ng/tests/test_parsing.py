@@ -12,6 +12,18 @@ from jsonmask_ng import parsing
 def test_multiple_builds():
     tests = [
         {
+            'fields': None,
+            'mask': {},
+        },
+        {
+            'fields': '',
+            'mask': {},
+        },
+        {
+            'fields': '()',
+            'mask': {},
+        },
+        {
             'fields': 'a,b',
             'mask': {'a': {}, 'b': {}},
         },

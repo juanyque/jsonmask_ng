@@ -32,6 +32,9 @@ def apply_json_mask(data, json_mask, is_negated=False, depth=1, max_depth=None):
     if isinstance(json_mask, string_types):
         json_mask = parse_fields(json_mask)
 
+    if not json_mask:
+        return ({} if is_negated else data)
+
     allowed_data = {}
     for key, subdata in data.items():
 

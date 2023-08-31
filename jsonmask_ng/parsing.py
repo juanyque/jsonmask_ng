@@ -31,11 +31,11 @@ def tokenize_partial_response(text):
     return tokens
 
 
-def parse_partial_response(tokens):
+def parse_partial_response(tokens) -> dict:
     return _parse_partial_response(tokens, {}, [])
 
 
-def _parse_partial_response(tokens, parent, stack):
+def _parse_partial_response(tokens, parent, stack) -> dict:
     parent = parent.copy()
     props = {}
 
@@ -76,7 +76,7 @@ def _parse_partial_response(tokens, parent, stack):
     return parent
 
 
-def parse_fields(fields):
+def parse_fields(fields) -> dict:
     """Turn a string jsonmask_ng into a Python dictionary representing the desired data pruning.
 
     You will likely want to call ``jsonmask_ng.mask.apply_json_mask``.
@@ -86,7 +86,7 @@ def parse_fields(fields):
     :returns:   dict
     """
     if not fields:
-        return None
+        return {}
 
     if isinstance(fields, list):
         fields = parse_fields_list(fields)
@@ -96,7 +96,7 @@ def parse_fields(fields):
     )
 
 
-def parse_fields_list(fields_list):
+def parse_fields_list(fields_list) -> str:
     fields_string = ''
 
     for field in fields_list:
