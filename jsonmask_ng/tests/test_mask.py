@@ -39,6 +39,8 @@ def test_apply_json_mask():
          'a': [{'b': 1}]}, {'a': [{'c': [1, 2, 3]}]},),
         ({'a': [{'b': 1, 'c': [{'d': 1}, {'d': 2, 'e': 3}]}]}, 'a(c(e))', {
          'a': [{'c': [{}, {'e': 3}]}]}, {'a': [{'b': 1, 'c': [{'d': 1}, {'d': 2}]}]},),
+        ({'k1': [{'k1k1': 1, 'k1k2': 2}], 'k2': [{'k2k1': 2},{'k2k1': 3}]}, 'k1(k1k1)', {
+         'k1': [{'k1k1': 1}]}, {'k1': [{'k1k2': 2}], 'k2': [{'k2k1': 2},{'k2k1': 3}]},),
     ]
 
     for index, (data, _mask, expected_result, expected_result_when_negated,) in enumerate(tests, start=1):
