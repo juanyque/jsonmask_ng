@@ -46,7 +46,7 @@ def apply_json_mask(data, json_mask, is_negated=False, depth=1, max_depth=None):
                     apply_json_mask(
                         entry,
                         next_json_mask,
-                        is_negated=is_negated,
+                        is_negated=is_negated if key in json_mask else False,
                         depth=depth + 1,
                         max_depth=max_depth,
                     )
