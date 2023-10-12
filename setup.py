@@ -17,7 +17,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '0.4.4'
+VERSION = '0.4.5'
 PACKAGE_NAME = 'jsonmask_ng'
 AUTHOR = 'Juan Garcia Longaron'
 AUTHOR_EMAIL = 'juan.mobilife@gmail.com'

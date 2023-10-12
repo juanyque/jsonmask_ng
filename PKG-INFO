@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: jsonmask_ng
-Version: 0.4.4
+Version: 0.4.5
 Summary: Implements the Google Partial Response protocol in Python
 Home-page: https://github.com/juanyque/jsonmask_ng
 Author: Juan Garcia Longaron

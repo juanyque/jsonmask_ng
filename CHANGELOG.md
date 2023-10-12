@@ -1,5 +1,9 @@
 # Revision History
 
+## 0.4.5 (2023/10/12)
+
+- Fix negate of list objects. (https://github.com/juanyque/jsonmask_ng/pull/3)
+
 ## 0.4.4 (2023/08/31)
 
 - Manage empty edge cases: return without filter.
